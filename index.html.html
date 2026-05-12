@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidade — AdegaFlow</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --gold: #C9962A;
+      --dark: #1A2318;
+      --card: #1E2B1C;
+      --text: #D4C9A8;
+      --muted: #8A9A84;
+      --border: #2E3D2C;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background-color: var(--dark);
+      color: var(--text);
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 300;
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1A2318 0%, #243022 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 2.5rem 2rem;
+      text-align: center;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .logo-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--gold);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: var(--gold);
+      letter-spacing: 0.02em;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
+
+    main {
+      max-width: 780px;
+      margin: 3rem auto;
+      padding: 0 1.5rem 4rem;
+    }
+
+    .last-updated {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--gold);
+      border-radius: 6px;
+      padding: 0.75rem 1.25rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 2.5rem;
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem;
+      color: var(--gold);
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    p {
+      margin-bottom: 0.75rem;
+      color: var(--text);
+    }
+
+    ul {
+      list-style: none;
+      margin: 0.5rem 0 0.75rem 0;
+    }
+
+    ul li {
+      padding: 0.3rem 0 0.3rem 1.5rem;
+      position: relative;
+      color: var(--text);
+    }
+
+    ul li::before {
+      content: "▸";
+      color: var(--gold);
+      position: absolute;
+      left: 0;
+    }
+
+    a {
+      color: var(--gold);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .contact-box p {
+      margin: 0.25rem 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+
+    .lang-switcher {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .lang-btn {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      padding: 0.3rem 0.75rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.8rem;
+      font-family: 'Source Sans 3', sans-serif;
+      transition: all 0.2s;
+    }
+
+    .lang-btn.active, .lang-btn:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    .content { display: none; }
+    .content.active { display: block; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-area">
+    <div class="logo-icon">🍽️</div>
+    <h1>AdegaFlow</h1>
+  </div>
+  <p class="subtitle">Gestão inteligente de cozinha · by WonderLoop Creations</p>
+  <div class="lang-switcher">
+    <button class="lang-btn active" onclick="setLang('pt')">PT</button>
+    <button class="lang-btn" onclick="setLang('en')">EN</button>
+    <button class="lang-btn" onclick="setLang('es')">ES</button>
+  </div>
+</header>
+
+<main>
+
+  <!-- PORTUGUÊS -->
+  <div id="content-pt" class="content active">
+    <div class="last-updated">Última atualização: maio de 2026</div>
+
+    <section>
+      <h2>1. Introdução</h2>
+      <p>A WonderLoop Creations ("nós", "nosso") desenvolveu a aplicação AdegaFlow ("app") como uma ferramenta de gestão de cozinha para restaurantes e estabelecimentos de restauração. Esta Política de Privacidade descreve como recolhemos, usamos e protegemos as suas informações.</p>
+    </section>
+
+    <section>
+      <h2>2. Dados Recolhidos</h2>
+      <p>A AdegaFlow recolhe os seguintes dados:</p>
+      <ul>
+        <li>Identificador anónimo de dispositivo (gerado automaticamente pelo Firebase Authentication sem necessidade de conta ou email)</li>
+        <li>Data de instalação da app e estado do período experimental (trial)</li>
+        <li>Estado da subscrição (Free ou PRO)</li>
+        <li>Dados operacionais introduzidos pelo utilizador: ingredientes, pratos, fichas técnicas, fornecedores e reservas — armazenados localmente no dispositivo</li>
+      </ul>
+      <p>A app <strong>não recolhe</strong> nome, email, localização, dados de pagamento nem qualquer informação pessoal identificável.</p>
+    </section>
+
+    <section>
+      <h2>3. Como Usamos os Dados</h2>
+      <ul>
+        <li>Controlo do período experimental de 30 dias</li>
+        <li>Verificação do estado da subscrição</li>
+        <li>Funcionamento correto da app</li>
+      </ul>
+      <p>Os dados operacionais (ingredientes, pratos, etc.) são armazenados exclusivamente no dispositivo do utilizador e nunca são transmitidos para os nossos servidores.</p>
+    </section>
+
+    <section>
+      <h2>4. Firebase e Google</h2>
+      <p>A app utiliza o Firebase (Google LLC) para autenticação anónima e gestão de subscrições. O Firebase pode recolher dados de diagnóstico e desempenho de acordo com a <a href="https://policies.google.com/privacy" target="_blank">Política de Privacidade da Google</a>.</p>
+    </section>
+
+    <section>
+      <h2>5. Partilha de Dados</h2>
+      <p>Não vendemos, alugamos nem partilhamos os seus dados com terceiros, exceto os serviços técnicos necessários ao funcionamento da app (Firebase/Google).</p>
+    </section>
+
+    <section>
+      <h2>6. Segurança</h2>
+      <p>Utilizamos as melhores práticas de segurança disponíveis. Os dados operacionais ficam no seu dispositivo e estão sob o seu controlo.</p>
+    </section>
+
+    <section>
+      <h2>7. Os Seus Direitos</h2>
+      <ul>
+        <li>Desinstalar a app em qualquer momento, o que remove todos os dados locais</li>
+        <li>Solicitar a eliminação do identificador anónimo associado à sua instalação</li>
+        <li>Contactar-nos para qualquer questão relacionada com privacidade</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>8. Alterações a Esta Política</h2>
+      <p>Podemos atualizar esta política periodicamente. Alterações significativas serão comunicadas através da app. O uso continuado da app após alterações implica a aceitação da nova política.</p>
+    </section>
+
+    <section>
+      <h2>9. Contacto</h2>
+      <div class="contact-box">
+        <p><strong>WonderLoop Creations</strong></p>
+        <p>Email: <a href="mailto:wonderloop.creations@gmail.com">wonderloop.creations@gmail.com</a></p>
+        <p>Malveira, Portugal</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- ENGLISH -->
+  <div id="content-en" class="content">
+    <div class="last-updated">Last updated: May 2026</div>
+
+    <section>
+      <h2>1. Introduction</h2>
+      <p>WonderLoop Creations ("we", "our") developed the AdegaFlow application ("app") as a kitchen management tool for restaurants and food service establishments. This Privacy Policy describes how we collect, use, and protect your information.</p>
+    </section>
+
+    <section>
+      <h2>2. Data Collected</h2>
+      <p>AdegaFlow collects the following data:</p>
+      <ul>
+        <li>Anonymous device identifier (automatically generated by Firebase Authentication — no account or email required)</li>
+        <li>App installation date and trial period status</li>
+        <li>Subscription status (Free or PRO)</li>
+        <li>Operational data entered by the user: ingredients, dishes, technical sheets, suppliers and reservations — stored locally on the device</li>
+      </ul>
+      <p>The app does <strong>not collect</strong> name, email, location, payment data or any personally identifiable information.</p>
+    </section>
+
+    <section>
+      <h2>3. How We Use Data</h2>
+      <ul>
+        <li>Control of the 30-day trial period</li>
+        <li>Subscription status verification</li>
+        <li>Correct app functionality</li>
+      </ul>
+      <p>Operational data (ingredients, dishes, etc.) is stored exclusively on the user's device and is never transmitted to our servers.</p>
+    </section>
+
+    <section>
+      <h2>4. Firebase and Google</h2>
+      <p>The app uses Firebase (Google LLC) for anonymous authentication and subscription management. Firebase may collect diagnostic and performance data in accordance with <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
+    </section>
+
+    <section>
+      <h2>5. Data Sharing</h2>
+      <p>We do not sell, rent or share your data with third parties, except for technical services necessary for the app to function (Firebase/Google).</p>
+    </section>
+
+    <section>
+      <h2>6. Security</h2>
+      <p>We use the best available security practices. Operational data stays on your device and is under your control.</p>
+    </section>
+
+    <section>
+      <h2>7. Your Rights</h2>
+      <ul>
+        <li>Uninstall the app at any time, which removes all local data</li>
+        <li>Request deletion of the anonymous identifier associated with your installation</li>
+        <li>Contact us for any privacy-related questions</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>8. Changes to This Policy</h2>
+      <p>We may update this policy periodically. Significant changes will be communicated through the app. Continued use of the app after changes implies acceptance of the new policy.</p>
+    </section>
+
+    <section>
+      <h2>9. Contact</h2>
+      <div class="contact-box">
+        <p><strong>WonderLoop Creations</strong></p>
+        <p>Email: <a href="mailto:wonderloop.creations@gmail.com">wonderloop.creations@gmail.com</a></p>
+        <p>Malveira, Portugal</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- ESPAÑOL -->
+  <div id="content-es" class="content">
+    <div class="last-updated">Última actualización: mayo de 2026</div>
+
+    <section>
+      <h2>1. Introducción</h2>
+      <p>WonderLoop Creations ("nosotros", "nuestro") desarrolló la aplicación AdegaFlow ("app") como una herramienta de gestión de cocina para restaurantes y establecimientos de restauración. Esta Política de Privacidad describe cómo recopilamos, usamos y protegemos su información.</p>
+    </section>
+
+    <section>
+      <h2>2. Datos Recopilados</h2>
+      <p>AdegaFlow recopila los siguientes datos:</p>
+      <ul>
+        <li>Identificador anónimo de dispositivo (generado automáticamente por Firebase Authentication — sin necesidad de cuenta ni email)</li>
+        <li>Fecha de instalación de la app y estado del período de prueba (trial)</li>
+        <li>Estado de la suscripción (Free o PRO)</li>
+        <li>Datos operacionales introducidos por el usuario: ingredientes, platos, fichas técnicas, proveedores y reservas — almacenados localmente en el dispositivo</li>
+      </ul>
+      <p>La app <strong>no recopila</strong> nombre, email, ubicación, datos de pago ni ninguna información personal identificable.</p>
+    </section>
+
+    <section>
+      <h2>3. Cómo Usamos los Datos</h2>
+      <ul>
+        <li>Control del período de prueba de 30 días</li>
+        <li>Verificación del estado de la suscripción</li>
+        <li>Funcionamiento correcto de la app</li>
+      </ul>
+      <p>Los datos operacionales (ingredientes, platos, etc.) se almacenan exclusivamente en el dispositivo del usuario y nunca se transmiten a nuestros servidores.</p>
+    </section>
+
+    <section>
+      <h2>4. Firebase y Google</h2>
+      <p>La app utiliza Firebase (Google LLC) para autenticación anónima y gestión de suscripciones. Firebase puede recopilar datos de diagnóstico y rendimiento de acuerdo con la <a href="https://policies.google.com/privacy" target="_blank">Política de Privacidad de Google</a>.</p>
+    </section>
+
+    <section>
+      <h2>5. Compartición de Datos</h2>
+      <p>No vendemos, alquilamos ni compartimos sus datos con terceros, excepto los servicios técnicos necesarios para el funcionamiento de la app (Firebase/Google).</p>
+    </section>
+
+    <section>
+      <h2>6. Seguridad</h2>
+      <p>Utilizamos las mejores prácticas de seguridad disponibles. Los datos operacionales permanecen en su dispositivo y están bajo su control.</p>
+    </section>
+
+    <section>
+      <h2>7. Sus Derechos</h2>
+      <ul>
+        <li>Desinstalar la app en cualquier momento, lo que elimina todos los datos locales</li>
+        <li>Solicitar la eliminación del identificador anónimo asociado a su instalación</li>
+        <li>Contactarnos para cualquier cuestión relacionada con la privacidad</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>8. Cambios en Esta Política</h2>
+      <p>Podemos actualizar esta política periódicamente. Los cambios significativos serán comunicados a través de la app. El uso continuado de la app tras los cambios implica la aceptación de la nueva política.</p>
+    </section>
+
+    <section>
+      <h2>9. Contacto</h2>
+      <div class="contact-box">
+        <p><strong>WonderLoop Creations</strong></p>
+        <p>Email: <a href="mailto:wonderloop.creations@gmail.com">wonderloop.creations@gmail.com</a></p>
+        <p>Malveira, Portugal</p>
+      </div>
+    </section>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 WonderLoop Creations · AdegaFlow</p>
+  <p style="margin-top:0.5rem;">Gestão inteligente de cozinha</p>
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.querySelectorAll('.content').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+    document.getElementById('content-' + lang).classList.add('active');
+    event.target.classList.add('active');
+  }
+</script>
+
+</body>
+</html>
